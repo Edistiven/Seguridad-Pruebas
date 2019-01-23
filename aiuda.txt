@@ -9,7 +9,8 @@ https://github.com/YaviracSoftware/matriculacion-server?fbclid=IwAR0JZ3WZswAU9TB
 
 /**/ renombarr como .env 
 
-configurar la conexion a la base de datos,tenr constastes y usarlos en todo el sistema por eso se ecxriben en mayuscula
+configurar la conexion a la base de datos,tener constantes y usarlos en
+todo el sistema por eso se escriben en mayuscula
 
 
 php -S localhost:8089 -t public

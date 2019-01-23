@@ -18,14 +18,9 @@ class Account extends Model implements AuthenticatableContract, AuthorizableCont
      * @var array
      */
     protected $fillable = [ // campos del modelo aceptas para se utilize los parámetros en BD
-        'email', 'alternative_email', 'password','token','role','state','user'
+        'email', 'alternative_email', 'name' ,'password','token','role','state'
     ];
 
-    /**
-     * The attributes excluded from the model's JSON form.
-     *
-     * @var array
-     */
     protected $hidden = [ //al momento de realizar una consulta el campo password no se visualiza
         'password'
     ];
@@ -38,6 +33,6 @@ class Account extends Model implements AuthenticatableContract, AuthorizableCont
 
     public function systems() //Relacion de Muchos a muchos
     {
-        return $this->hasMany('App\Accoutn'); //Se relacionara de muchos a muchos
+        return $this->hasMany('App\Account'); //Se relacionara de muchos a muchos
     }
 }

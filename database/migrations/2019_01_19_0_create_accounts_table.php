@@ -17,11 +17,11 @@ class CreateAccountsTable extends Migration
             $table->increments('id');
             $table->string('email')->unique();
             $table->string('alternative_email')->unique();
-            $table->string('user');
+            $table->string('name');
             $table->string('password');
             $table->string('token');
-            $table->boolean('rol');
-            $table->boolean('state');
+            $table->integer('role');
+            $table->integer('state');
             $table->timestamps();
         });
     }

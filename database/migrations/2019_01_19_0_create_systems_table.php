@@ -16,7 +16,7 @@ class CreateSystemsTable extends Migration
         Schema::create('systems', function (Blueprint $table) {
             $table->increments('id');
             $table->string('system_name')->unique();
-            $table->boolean('state');
+            $table->integer('state');
             $table->string('url')->unique();
             $table->timestamps();
         });
