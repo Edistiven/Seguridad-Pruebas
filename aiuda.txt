@@ -1,0 +1,67 @@
+yaviracSoftware/matriculacion-server
+
+composer global require "laravel/lumen-installer"
+//install lumen
+
+composert install
+
+https://github.com/YaviracSoftware/matriculacion-server?fbclid=IwAR0JZ3WZswAU9TB2f9JM_8ZTiecSuf1F4wI6lsc3IZaMwVYx7e3Uu7lUbIc
+
+/**/ renombarr como .env 
+
+configurar la conexion a la base de datos,tenr constastes y usarlos en todo el sistema por eso se ecxriben en mayuscula
+
+
+php -S localhost:8089 -t public
+
+/**************************************************/
+/* Rutas publicas*/
+$router->get('/', funtion(){
+return str_random(length: 60);
+});
+
+/*****************************************/
+
+APP_ENV=local
+APP_DEBUG=true
+APP_KEY=
+APP_TIMEZONE=America/Guayaquil
+
+LOG_CHANNEL=stack
+LOG_SLACK_WEBHOOK_URL=
+
+DB_CONNECTION=pgsql
+DB_HOST=127.0.0.1
+DB_PORT=5432
+DB_DATABASE=db_ignug
+DB_USERNAME=postgres    
+DB_PASSWORD=1234
+DB_SCHEMA=public
+
+CACHE_DRIVER=file
+QUEUE_DRIVER=sync
+
+/*******************************/
+
+Install LUMENT
+composer global require "laravel/lumen-installer"
+
+/**************************************
+composer install
+para crear carpeta vendor
+*****************************************
+
+
+comando para emigrar tabla en ingles y en plural
+php artisan migrates:fresh --seed // para hacer pruebas cuando se trabaja en desarrollo y el codigo 
+
+php artisan migrates:fresh // se borra todas las tablas
+
+php artisan migrate /actualizar las creadas
+con el --seed lleno las tablas 
+
+php artisan make:migration create_companies_table
+
+muchos a muchos 2
+
+tabla pivote m/muchos en medio de dos: php artisan make:migration create_role_user_table // en minusculas
